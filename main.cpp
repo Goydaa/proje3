@@ -19,15 +19,15 @@ int main() {
     bank1.addAccount(&account1);
     bank1.addAccount(&account2);
 
-    std::cout << "Áàëàíñ äî ïåðåâîäà:\n";
-    std::cout << "Ñ÷åò 1: " << account1.getBalance() << "\n";
-    std::cout << "Ñ÷åò 2: " << account2.getBalance() << "\n";
+    std::cout << "Ð‘Ð°Ð»Ð°Ð½Ñ Ð´Ð¾ Ð¿ÐµÑ€ÐµÐ²Ð¾Ð´Ð°:\n";
+    std::cout << "Ð¡Ñ‡ÐµÑ‚ 1: " << account1.getBalance() << "\n";
+    std::cout << "Ð¡Ñ‡ÐµÑ‚ 2: " << account2.getBalance() << "\n";
 
     Transaction::transfer(&account1, &account2, 200.0);
 
-    std::cout << "Áàëàíñ ïîñëå ïåðåâîäà:\n";
-    std::cout << "Ñ÷åò 1: " << account1.getBalance() << "\n";
-    std::cout << "Ñ÷åò 2: " << account2.getBalance() << "\n";
+    std::cout << "Ð‘Ð°Ð»Ð°Ð½Ñ Ð¿Ð¾ÑÐ»Ðµ Ð¿ÐµÑ€ÐµÐ²Ð¾Ð´Ð°:\n";
+    std::cout << "Ð¡Ñ‡ÐµÑ‚ 1: " << account1.getBalance() << "\n";
+    std::cout << "Ð¡Ñ‡ÐµÑ‚ 2: " << account2.getBalance() << "\n";
 
     return 0;
 }
